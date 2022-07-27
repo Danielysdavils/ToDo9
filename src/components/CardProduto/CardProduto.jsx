@@ -1,20 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const CardProduto = ({ dados }) => {
   
-  const {id, foto, nome, descricao, precoAntigo, preco, parcelas} = dados
-  
+  const {name, image, description, oldPrice, price} = dados
+  console.log(name);
+
     return (
       <div>
-        <img src={foto} alt="" />
-        <h3>{nome}</h3>
-        <p>{descricao}</p>
-        <h3>{precoAntigo}</h3>
-        <p>{preco}</p>
-        <p>{parcelas}</p>
-
-        <Link to={`/produto/${nome}`}>Ver produto</Link>
+        <img src={image} alt="" />
+        <h3>{name}</h3>
+        <p>{description}</p>
+        <h3>{oldPrice}</h3>
+        <p>{price}</p>
+        <input type="button" value="comprar" />
       </div>
   )
 }
