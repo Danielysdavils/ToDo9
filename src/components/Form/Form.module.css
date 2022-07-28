@@ -1,0 +1,79 @@
+/* Paragrafo */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.article{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    font-size: 20px;
+}
+
+.paragrafo{
+    width: 90%;
+    text-align: justify;
+    font-size: 12px;
+}
+
+/* Form */
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
+    margin: 10px;
+}
+
+.contInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label{
+    width: 380px;
+    height: 25px;
+}
+
+.input{
+    width: 380px;
+    height: 25px;
+    margin: 20px
+}
+    
+.contRadio{
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.inRadio{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+}
+
+.labelRadio{
+    width: 150px;
+}
+
+.enviar{
+    width: 380px;
+    height: 35px;
+    margin: 20px;
+    background-color: #ffffff;
+    border: 1px solid #707070;
+    border-radius: 3px;
+    color: #707070;
+}
+

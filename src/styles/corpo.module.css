@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #888888;
+}
+
+.corpo{
+    margin-top: 80px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,18 @@
+.contBot{
+    width: 97vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.boton1{
+    color: #888888;
+    width: 140px;
+    padding: 8px;
+    margin: 13px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 1em #00000029;
+}

@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+}
+
+.linha{
+    width: 60%;
+    height: 1px;
+    border-radius: 5px;
+    background-color: #707070;
+}
+
+.txt{
+    width: 40%;
+    font-size: 18px;
+    margin: 5px;
+    text-align: center;
+}

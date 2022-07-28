@@ -1,0 +1,23 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+}
+
+.paragrafo{
+    width: 90%;
+    padding: 10px;
+}
+
+.button{
+    width: 90%;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}

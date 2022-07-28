@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState, useEffect} from "react"
 import CardProduto from '../CardProduto/CardProduto'
+import S from './Produtos.module.css'
 
 const Produtos = () => {
 
@@ -24,14 +25,16 @@ const Produtos = () => {
   }, [])
 
   return (
-    <div>
-      <div>
+    <div className={S.container}>
+      <div className={S.containerGrid}>
         {produtos.map((produto) => {
           return <CardProduto dados={produto} key={produto.id} />
         })}
       </div>
 
-      <input type="button" onClick={handleRequisicao} value="Ainda mais produtos aquí!" />
+      <div className={S.containerInp}>
+        <input type="button" onClick={handleRequisicao} value="Ainda mais produtos aquí!" className={S.botton} />
+      </div>
     </div>
   )
 }

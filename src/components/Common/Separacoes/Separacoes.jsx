@@ -1,11 +1,12 @@
 import React from 'react'
+import S from './Separacoes.module.css'
 
-const Separacoes = () => {
+const Separacoes = (props) => {
   return (
-    <div>
-        <div></div>
-        <h3>Sua seleção especial</h3>
-        <div></div>
+    <div className={S.container}>
+        <div className={S.linha}></div>
+        <h3 className={S.txt}>{props.text}</h3>
+        <div className={S.linha}></div>
     </div>
   )
 }

@@ -1,18 +1,29 @@
 import React from 'react'
 import Header from '../../components/Common/Header/Header'
-import Texto from '../../components/Common/Texto/Texto'
 import Form from '../../components/Form/Form'
 import Separacoes from '../../components/Common/Separacoes/Separacoes'
 import Produtos from '../../components/Produtos/Produtos'
+import Footer from '../../components/Footer/Footer'
+import Compartilhe from '../../components/Compartilhe/Compartilhe'
+import S from '../../styles/corpo.module.css'
+
 
 const Home = () => {
   return (
-    <div>
+    <div className={S.container}>
         <Header />
-        <Texto />
-        <Form />
-        <Separacoes />
-        <Produtos />
+        
+        <div className={S.corpo}>
+          <Form />
+          <Separacoes text='Sua seleção especial' />
+          <Produtos />
+
+          <Separacoes text='Compartilhe a novidade' />
+
+          <Compartilhe />
+        </div>
+
+        <Footer />
     </div>
   )
 }

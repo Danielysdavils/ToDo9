@@ -1,11 +1,12 @@
 import React from 'react'
+import S from './Tittle.module.css'
 
 const Tittle = () => {
   return (
-    <div>
-        <h2 className='tit1'>uma seleção de produtos</h2>
-        <h1 className='tit2'>especial para você</h1>
-        <h3 className='tit3'>Todos os produtos desta lista forma selecionados a partir da sua navegação. Aproveite!</h3>
+    <div className={S.tit}>
+        <h3 className={S.tit1}>uma seleção de produtos</h3>
+        <h3 className={S.tit2}>especial para você</h3>
+        <h3 className={S.tit3}>Todos os produtos desta lista forma selecionados a partir da sua navegação. Aproveite!</h3>
     </div>
   )
 }
