@@ -1,7 +1,36 @@
 import React from 'react'
+import { useState } from 'react'
 import S from './Form.module.css'
 
 const Form = () => {
+
+  const [emailUser, setEmailUser] = useState('')
+  const [cpfUser, setCpfUser] = useState('')
+
+  const handleEmail = (target) => {
+    setEmailUser(target.value)
+  }
+
+  const handleCpf = (target) => {
+    setCpfUser(target.value)
+  }
+
+  function validaEmail(){
+    if(emailUser.length >= 10 && emailUser.indexOf('@') > 2){
+      console.log('Email Valido'); 
+    }else{
+      console.log('Email invalido');
+    }
+  }
+
+  function validaCpf(){
+    if(cpfUser.length === 11){
+      console.log('Cpf valido');
+    }else{
+      console.log('cpf invalido');
+    }
+  }
+
   return (
     <div className={S.container}>
       
@@ -16,24 +45,30 @@ const Form = () => {
       <div className={S.forms}>
 
         <div className={S.contInput}>
+
           <label htmlFor="nome" className={S.label}>Seu nome:</label>
           <input type="text" name="nome" id="nome" className={S.input}/>
 
           <label htmlFor="email" className={S.label}>E-mail</label>
-          <input type="email" name="email" id="email" className={S.input}/>
+          <input type="email" name="email" id="email" className={S.input} value={emailUser} onChange={({target}) => handleEmail(target)} />
 
           <label htmlFor="cpf" className={S.label}>CPF:</label>
-          <input type="number" name="cpf" id="cpf" className={S.input}/>
+          <input type="number" name="cpf" id="cpf" className={S.input} value={cpfUser} onChange={({target}) => handleCpf(target)}/>
+
         </div>
 
         <div className={S.contRadio}>
-          <input type="radio" name="male" id="male" className={S.inRadio}/>
+          <input type="radio" name="genero" id="male" className={S.inRadio}/>
           <label htmlFor="male" className={S.labelRadio}>Masculino</label>
-          <input type="radio" name="fem" id="fem" className={S.inRadio}/>
+          <input type="radio" name="genero" id="fem" className={S.inRadio}/>
           <label htmlFor="fem" className={S.labelRadio}>Feminino</label>
         </div>
 
-        <input type="button" value="Enviar" className={S.enviar}/>
+        <input type="button" value="Enviar" className={S.enviar} onClick={(e) => {
+          e.preventDefault()
+          validaEmail()
+          validaCpf()
+        }}/>
 
       </div>
     </div>

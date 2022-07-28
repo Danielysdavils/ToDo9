@@ -30,3 +30,37 @@
     border-right: 98vw solid transparent;
 }
 
+@media (max-width: 426px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 98vw;
+        height: 400px;
+    } 
+    
+    .quadrado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position:relative;
+        width: 720px;
+        height:400px;
+        background-color:#707070;
+    }
+    
+    .contTrian{
+        height: 70px;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .triangulo{
+        width: 0;
+        left: 0;
+        border-left: 0px solid transparent;
+        border-bottom: 70px solid #ffffff;
+        border-right: 720px solid transparent;
+    }
+}
+

@@ -16,3 +16,25 @@
     border: none;
     box-shadow: 0 0 1em #00000029;
 }
+
+@media (max-width: 426px){
+    .contBot{
+        display: grid;
+        grid-template-columns: 130px 154px ;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: 34px 25px;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    
+    .boton1{
+        color: #888888;
+        width: 140px;
+        padding: 8px;
+        margin: 13px;
+        border-radius: 3px;
+        border: none;
+        box-shadow: 0 0 1em #00000029;
+    }
+}

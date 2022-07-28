@@ -2,6 +2,7 @@ import React from 'react'
 import S from './Footer.module.css'
 
 const Footer = () => {
+  
   return (
     <div className={S.section}>
         <div className={S.quadrado}>

@@ -24,3 +24,30 @@
     font-size: 14px;
     margin: 30px;
 }
+
+@media (max-width: 426px){
+    .tit {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+        Helvetica, Arial, "Lucida Grande", sans-serif;
+        color: #ffffff;
+    
+        margin-top: 20px;
+    }
+    
+    .tit1{
+        margin: 15px;
+    }
+    
+    .tit2{
+        margin: 15px;
+    }
+    
+    .tit3 {
+        margin: 15px;
+    }
+    
+}
